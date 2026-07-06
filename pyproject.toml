@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-plagiarism-engine"
+version = "1.0.0"
+description = "Semantic Duplicate & Near Plagiarism Detection Engine"
+authors = [
+    {name="Your Name"}
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "click",
+    "tqdm"
+]
+
+[project.scripts]
+plagiarism-engine = "plagiarism_engine.cli:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
