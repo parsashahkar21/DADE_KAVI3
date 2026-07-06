@@ -115,6 +115,3 @@ On the full Quora Question Pairs dataset (~404k pairs):
 
 Results depend on threshold settings in `Evaluator` (`similarity_threshold` for MinHash, `hamming_threshold` for SimHash).
 
-## License
-
-MIT (or update this section to match your chosen license.)
